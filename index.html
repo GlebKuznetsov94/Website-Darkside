@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkside</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+    <a href="#home" class="logo"> <img src="images/logo.png" alt=""> </a>
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="Искать..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-credit-card"></a>
+    </div>
+</header>
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">На главную</a>
+    <a href="#shop">Эксклюзив</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#team">Команда</a>
+    <a href="#arrivals">Новинки</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#partners">Партнеры</a>
+    <a href="#blogs">Мероприятия</a>
+    <video class="background-video" src="video/promo.mp4" muted autoplay loop></video>
+</nav>
+<section class="home" id="home">
+    <div class="slide active">
+        <div class="content">
+            <img src="images/content-img-1.png" alt="">
+            <h3>DARKSIDE</h3>
+            <span>Новый уровень удовольствия</span>
+            <a href="#" class="btn">Узнать больше</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-1.jpg" alt="">
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-2.png" alt="">
+            <h3>DARKSIDE</h3>
+            <span>Непередаваемая атмосфера отдыха</span>
+            <a href="#" class="btn">Узнать больше</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-2.jpg" alt="">
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-3.png" alt="">
+            <h3>DARKSIDE</h3>
+            <span>Эксклюзивное VIP обслуживание</span>
+            <a href="#" class="btn">Узнать больше</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-3.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="category">
+    <a href="#" class="box">
+        <img src="images/category-0.svg" alt="">
+        <p>VIP обслуживание</p>
+    </a>
+    <a href="#" class="box">
+        <img src="images/category-1.svg" alt="">
+        <p>Кальяны</p>
+    </a>
+    <a href="#" class="box">
+        <img src="images/category-2.svg" alt="">
+        <p>Напитки</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-3.svg" alt="">
+        <p>Еда</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-4.svg" alt="">
+        <p>Игры</p>
+    </a>
+    <a href="#" class="box">
+        <img src="images/category-5.svg" alt="">
+        <p>Трансляции</p>
+    </a>
+</section>
+<section class="about" id="about">
+    <div class="content">
+        <span>Почему Darkside?</span>
+        <h3>Darkside это больше чем кальянная...</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, cumque dolorem inventore mollitia libero ut officia alias voluptates corporis facilis voluptatibus ratione molestias dolore beatae autem illum, accusantium dolorum esse.</p>
+        <a href="#" class="btn">Узнать больше</a>
+    </div>
+</section>
+<section class="shop" id="shop">
+    <div class="heading">
+        <h1>Эксклюзивно в Darkside</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio.</p>
+    </div>
+    <div class="swiper products-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-credit-card"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hookah standart</p>
+                    <div class="price">1500&#8381<span>2000&#8381</span></div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-credit-card"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hookah tobacco p.1</p>
+                    <div class="price">750&#8381<span>1000&#8381</span></div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-50%</span>
+                    <img src="images/product-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-credit-card"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hookah elite</p>
+                    <div class="price">2500&#8381<span>5000&#8381</span></div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-credit-card"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hookah tobacco p.2</p>
+                    <div class="price">750&#8381<span>1000&#8381</span></div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-75%</span>
+                    <img src="images/product-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-credit-card"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hookah VIP</p>
+                    <div class="price">2500&#8381<span>10000&#8381</span></div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-credit-card"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hookah tobacco p.3</p>
+                    <div class="price">750&#8381<span>1000&#8381</span></div>
+                </div>
+            </div>
+                </div>
+            </div>
+</section>
+<section class="gallery" id="gallery">
+    <div class="heading">
+        <h1>Галерея Darkside</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio.</p>
+    </div>
+    <div class="lightbox">
+        <a href="images/img-1.jpg"><img src="images/img-1.jpg" alt=""></a>
+        <a href="images/img-2.jpg"><img src="images/img-2.jpg" alt=""></a>
+        <a href="images/img-3.jpg"><img src="images/img-3.jpg" alt=""></a>
+        <a href="images/img-4.jpg"><img src="images/img-4.jpg" alt=""></a>
+        <a href="images/img-5.jpg"><img src="images/img-5.jpg" alt=""></a>
+        <a href="images/img-6.jpg"><img src="images/img-6.jpg" alt=""></a>
+    </div>
+</section>
+<section class="team" id="team">
+    <div class="heading">
+        <h1>Команда Darkside</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio.</p>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="images/team-1.jpg" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-telegram"></a>
+                    <a href="#" class="fab fa-vk"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Vanessa Taylor</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/team-2.jpg" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-telegram"></a>
+                    <a href="#" class="fab fa-vk"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Dior Keily</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/team-3.jpg" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-telegram"></a>
+                    <a href="#" class="fab fa-vk"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Kevin Green</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="arrivals" id="arrivals">
+    <div class="heading">
+        <h1>Новинки Darkside</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio.</p>
+    </div>
+    <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>New hookah</p>
+                    <div class="price">Эксклюзивно в Darkside<span>Везде</span></div>
+                    <a href="#" class="btn">Попробовать</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>New champagne</p>
+                    <div class="price">Эксклюзивно в Darkside<span>Везде</span></div>
+                    <a href="#" class="btn">Попробовать</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>New hookah</p>
+                    <div class="price">Эксклюзивно в Darkside<span>Везде</span></div>
+                    <a href="#" class="btn">Попробовать</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>New elite alcohol</p>
+                    <div class="price">Эксклюзивно в Darkside<span>Везде</span></div>
+                    <a href="#" class="btn">Попробовать</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>New hookah</p>
+                    <div class="price">Эксклюзивно в Darkside<span>Везде</span></div>
+                    <a href="#" class="btn">Попробовать</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>New cocktails</p>
+                    <div class="price">Эксклюзивно в Darkside<span>Везде</span></div>
+                    <a href="#" class="btn">Попробовать</a>
+                </div>
+            </div>
+            </div>
+        </div>
+</section>
+<section class="reviews" id="reviews">
+<div class="heading">
+    <h1>Отзывы о Darkside</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio.</p>
+</div>
+</section>
+<section class="reviews">
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>Michael Taylor</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>Roberta Johnson</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum similique, numquam non, quasi, voluptatibus perspiciatis fugiat incidunt veniam nulla in aut aliquid necessitatibus nobis reiciendis ullam explicabo. Nulla, rem adipisci.</p>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>Evil Black</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aliquid mollitia voluptatem alias illo officiis.</p>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>Vanessa Taylor</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-5.png" alt="">
+                    <div class="info">
+                        <h3>Kevin Green</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sequi minima sed obcaecati iste beatae quo praesentium, deleniti earum velit labore nobis voluptates a quam veniam delectus fugiat! Saepe, eos!</p>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-6.png" alt="">
+                    <div class="info">
+                        <h3>Dior Keily</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners" id="partners">
+    <div class="heading">
+        <h1>Партнеры Darkside</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio.</p>
+    </div>
+    </section>
+<section class="service">
+    <div class="box">
+        <img src="images/service-1.png" alt="">
+        <h3>WOOKAH Online Store</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias.</p>
+    </div>
+    <div class="box">
+        <img src="images/service-2.png" alt="">
+        <h3>DARKSIDE — производитель табака</h3>
+        <h3>AST — Alcohol Service Technologies</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias.</p>
+    </div>
+    <div class="box">
+        <img src="images/service-3.png" alt="">
+        <h3>MattPear кальяны и аксессуары</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias.</p>
+    </div>
+</section>
+<section class="blogs" id="blogs">
+    <div class="heading">
+        <h1>Мероприятия</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio.</p>
+    </div>
+    <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Администратор</a>
+                        <a href="#"> <i class="fas fa-clock"></i>05.12.2022</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>VIP-мероприятие</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Узнать больше</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Администратор</a>
+                        <a href="#"> <i class="fas fa-clock"></i>12.12.2022</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>VIP-мероприятие</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Узнать больше</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Администратор</a>
+                        <a href="#"> <i class="fas fa-clock"></i>19.12.2022</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>VIP-мероприятие</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Узнать больше</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Администратор</a>
+                        <a href="#"> <i class="fas fa-clock"></i>26.12.2022</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>VIP-мероприятие</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Узнать больше</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Администратор</a>
+                        <a href="#"> <i class="fas fa-clock"></i>30.12.2022</a>
+                    </div>
+                </div>
+                        <div class="content">
+                            <h3>VIP-мероприятие</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                            <a href="#" class="btn">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+</section>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Вернуться</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i>На главную</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i>Эксклюзив</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i>Галерея</a>
+            <a class="link" href="#team"> <i class="fas fa-angle-right"></i>Команда</a>
+            <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i>Новинки</a>
+            <a class="link" href="#reviews"> <i class="fas fa-angle-right"></i>Отзывы</a>
+            <a class="link" href="#partners"> <i class="fas fa-angle-right"></i>Партнеры</a>
+            <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i>Мероприятия</a>
+        </div>
+        <div class="box">
+            <h3>Контакты</h3>
+            <p> <i class="fas fa-phone"></i> +7 998-765-4321</p>
+            <p> <i class="fas fa-phone"></i> +7 912-345-6789</p>
+            <p> <i class="fas fa-envelope"></i>Darkside@gmail.com</p>
+            <p> <i class="fas fa-map"></i>Россия, г. Тверь, ул. Новоторжская, д. 18, корп. 1</p>
+            <div class="share">
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-telegram"></a>
+                <a href="#" class="fab fa-vk"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Подписаться на Darkside</h3>
+            <p>Подпишитесь на рассылку, что бы получать самые свежие новости</p>
+            <form action="">
+                <input type="email" name="" placeholder="Введите email..." id="" class="email">
+                <input type="submit" value="Подписаться" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="credit">ООО "Darkside" ИНН 00000000 | ОГРН 00000000<br>Все права защищены<br>FC DC 18+<br>© Strawberry.inc🍓</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+</body>
+</html>
